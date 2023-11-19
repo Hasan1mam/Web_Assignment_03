@@ -60,7 +60,7 @@ include 'connect.php';
           <h2 class="contact__title">
              Send Me A Message
           </h2>
-          <form action="" class="contact__form" id="contact-form">
+          <form action="" class="contact__form" id="contact-form" method="post">
              <div class="contact__group">
                 <div class="contact__box">
                    <input type="text" name="user_name" class="contact__input" id="name" required placeholder="First Name">
@@ -86,9 +86,11 @@ include 'connect.php';
                 <label for="message" class="contact__label">Message</label>
              </div>
              <p class="contact__message" id="contact-message"></p>
-             <button type="submit" class="contact__button button">
-                <i class="ri-send-plane-line"></i> Submit
-             </button>
+
+            
+             <input type="submit" class="contact__button button" name="submit"  >
+              
+               
 
           </form>
           <?php
